@@ -1,0 +1,200 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Jim">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en] (Win98; I) [Netscape]">
+   <title>exercise 6.3</title>
+</head>
+<body text="#000000" bgcolor="#FFFFCC" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+&nbsp;
+<center>
+<p><b><u><font size=+2>Section 6.3: The original proposal and its realisation</font></u></b></center>
+
+<p>What CERN needed, Berners-Lee argued, was some kind of linked information
+system.
+<p>But what sort of system? After criticising the types of linking which
+were then in vogue - for eg, the hierarchical tree-structures exemplified
+by the 'help' systems of minicomputers; or those which relied upon indexed
+keywords - He proposed a solution to CERN's problem, it was called hypertext.
+<p>The special requirements of a hypertext system for CERN were, he believed,
+that it should:
+<ul>
+<li>
+allow remote access across networks</li>
+
+<li>
+be heterogeneous (allow access to the same info from different types of
+computer system)</li>
+
+<li>
+be non-centralised</li>
+
+<li>
+allow access to existing data</li>
+
+<li>
+enable users to add their own private links to and from public information,
+and to annotate links as well as nodes privately, and</li>
+
+<li>
+enable 'live' links to be made between dynamically changing data.</li>
+</ul>
+Finally, he proposed 3 specific applications within CERN for such a system:
+development project documentation; document retrieval; and personal skills
+inventories (due to the large population of differently-skilled experts).
+<p>The paper concludes with a recommendation that CERN should 'work toward
+a universal linked information system in which generality and portability
+are more important than fancy graphics techniques and complex extra facilities'.
+<p><font color="#009900"><font size=-1>"The aim should be to allow a place
+to be found for any information or reference which one felt was important,
+and a way of finding it afterwards. The result should be sufficiently attractive
+to use that the information contained would grow past a critical threshold,
+so that the usefulness of the scheme would in turn encourage its increased
+use. The passing of this threshold [should be] accelerated by allowing
+large existing databases to be linked together and with new ones."</font></font>
+<p>To test these ideas he proposed a practical project to build a prototype
+system.&nbsp; 'I imagine', he wrote, 'that two people for 6 to 12 months
+would be sufficient for this phase of the project'.&nbsp; A 2nd phase would
+involve some programming in order to set up a real system at CERN on many
+machines. An important part of this is the integration of a hypertext system
+with existing data, so as to provide a universal system, and to achieve
+critical usefulness at an early stage.
+<p><b>The invention of the Web</b>
+<br>Berners-Lee's proposal was first circulated in March 1989 with a rfc,
+and re-circulated in May 1990. In October 1990 the project proposal was
+reformulated with encouragement from CERN senior management and Robert
+Cailliau as co-author. It was at this point that the central difference
+between Berners-Lee's ideas and those of Engelbart, Nelson and Atkinson
+became clear, for the name 'World-Wide Web' was chosen, implying that the
+Net was an integral part of the concept from the word go. (The term 'web'
+was not original, already being long established in the hypertext community).
+<p>Thereafter, things moved with astonishing speed. In Nov 1990, Berners-Lee
+and Cailliau&nbsp; wrote a program called a browser, which provided a virtual
+'window' through which the user saw the 'web' of linked resources on the
+Internet. It refracted a world of disparate info sources in such a way
+that they appeared as a uniform whole. They also wrote a server program
+which could deliver files on demand.
+<p>Since the NeXT machine on which these initial programs were written
+was pretty exotic hardware and their proposal had set as one of the design
+criteria that the Web should work over a range of different computer systems,
+there was clearly a need for another kind of browser which would function
+on non-graphical displays. Accordingly a newly-arrived technical student
+from Leicester Polytechnic called Nicola Pellow was set to work writing
+a simple ' line-mode' browser.
+<p>By Christmas 1990 demo versions of both browsers and a prototype web
+server were available, enabling users to access hypertext files, articles
+from Internet newsgroups and files from the help system of one of the CERN
+computers.
+<p>By March 1991, the line-mode browser was released to a limited audience
+to run on the more powerful workstations in the CERN environment.
+<p>On May 17 1991 the WWW software was generally released on central CERN
+machines.
+<p>In Aug 1991, info about the project and the software was posted in relevant
+Internet newsgroups like
+<ul>
+<li>
+alt.hypertext</li>
+
+<li>
+comp.sys.next</li>
+
+<li>
+comp.text.sgml</li>
+
+<li>
+comp.mail.multi-media.</li>
+</ul>
+In October 1991 gateways were installed enabling the browsers to access
+Help files on the laboratory's Digital VAX computers and the Wide Area
+Information Servers (WAIS) which were then the nearest thing to search
+engines that the Internet possessed.
+<p>Finally in Dec 1991, the CERN computer newsletter announced the Web
+to the world of High Energy Physics. It had taken just over a year from
+the moment Berners-Lee had typed the first line of code.
+<p><b>The underlying model of the Web</b>
+<br>The underlying model of the Web envisaged by Berners-Lee and Cailliau
+was a 'client-server' one. They envisaged&nbsp;&nbsp; a system in which
+information would be held on networked computers called servers, and that
+these would be accessed by client programs (browsers) running on other
+networked computers. Servers, in this model, are essentially givers, while
+clients are always takers (though they give some information about themselves
+to servers at the moment of interaction). The central tasks in building
+such a system were to write the programs which would enable computers to
+act as servers and clients, to create a common language in which both could
+converse and to set up some conventions by which they could locate one
+another.
+<p>The client-server model was already well established, there were innumerable
+machines on the Net which operated as servers, and there were several ways
+of extracting information from them. At the lowest level, you could use
+the primitive TELNET facility to log on to a remote machine and (with permission)
+run programs on it. Or you could use the File Transfer Protocol (FTP) program
+to log on remotely and download files. And there were various search facilities
+- the precursors of search engines - for locating information on the Internet.
+<p>In order to make use of these facilities, however, you needed to know
+what you were doing. Accessing the Net before the Web was akin to using
+MS-DOS or UNIX - you could do almost anything provided you knew the lingo.
+The trouble was that the lingo was user-hostile. Computer experts took
+to it like ducks to water; the rest of humanity, however, looked the other
+way.
+<p>The pre-WWW Net was, wrote Robert Reid,
+<p><font color="#009900"><font size=-1>'...an almost militantly egalitarian
+and cooperative community. Nobody owned the network. Virtually nobody made
+money from it directly. Almost every piece of software that governed or
+accessed it was free. But the Internet's tight de facto admission requirements
+of technical acumen, access and pricey tools also made it a very elite
+realm.'</font></font>
+<p>One of the central tasks Berners-Lee faced was the lowering of this
+threshold. He achieved it partly by inventing an interface - a program
+which stood between the user and the vast and disparate info resources
+of the Net. In seeking a model for this interface he drew heavily on ideas
+which had emanated from the hypertext community, where the problem of navigating
+through a virtual space of linked texts had been addressed through the
+notion of a 'browser', i.e. a virtual window which displayed the structure
+of the space. The Xerox NoteCards system developed in the early 1980s,
+for eg, had a special 'browser card' which displayed editable node-link
+diagrams showing the structure of some portion of the hypertext network
+currently in use. Other hypertext or hypermedia systems had similar tools.
+<p>But to the original hypertext notion of browsing, the CERN people added
+something else which echoed the thinking of Ted Nelson, namely the idea
+that documents should be editable by their readers. Berners-Lee's idea
+of a browser therefore was not just an interface that would provide passive
+<br>viewing, but something that would allow users to create their own inline
+links even as they were reading a document. This is the one part of his
+vision which did not survive beyond the CERN version (though it lives on
+to some extent in the web-editing program(s) which you are using on this
+course).
+<p>Because Next workstations (and graphics terminals) were then still a
+rarity in the networked computing world, it was essential that a non-graphical
+browser also be developed. This is what Nicola Pellow had been charged
+with creating - a program which would run on character-based screens, presenting
+web resources as a set of items in a menu. Such a program had several advantages,
+not least its relatively compact code size (which made it easy to run and
+download) and the fact that it made few demands on the machines which would
+run it.
+<p><b>Release of the CERN WWW software</b>
+<br>The Web went public on 15 January 1991 when the line-mode browser developed
+at CERN was made available by the process known as 'anonymous FTP'. That
+is to say, anyone with a Net connection and a copy of the FTP program could
+call up the CERN site, log in without having to use a password and download
+the browser code. Other researchers - many not based at CERN - were already
+busy developing graphics-based browsers which did not require fancy workstations.
+In April a Finnish browser for UNIX called 'Erwise' was released and this
+was followed in May by the release of Pei Wei's Viola graphical browser
+(also for UNIX machines). By July, CERN was distributing all the code (server
+and browsers, including Viola) from its servers.
+<p>In November 1992 there were 26 known WWW servers in existence, including
+one at the US National Centre for Supercomputer Applications (NCSA) at
+the University of Illinois at Champaign-Urbana. Two months later, the number
+of servers had almost doubled - to 50. By Internet standards this was encouraging
+growth, but nothing spectacular: the Web was still just one of the many
+applications running across the network. Compared to E-mail, FTP and all
+the other stuff running across the Net, the Web traffic was still pretty
+small beer. This was dramatically changed in the Spring of 93 when a student
+in Illinois launched a browser called Mosaic, which turned the Web into
+a mass medium.
+<p>
+<hr WIDTH="100%">
+<br><a href="doc8.htm">Back to Module 3 reflection</a>
+</body>
+</html>
